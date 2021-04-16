@@ -8,7 +8,7 @@ provider "mongodbatlas" {
 # Need a project
 resource "mongodbatlas_project" "proj1" {
   name   = local.project_id
-  org_id = local.organization_id
+  org_id = var.atlas_org_id
 }
 
 resource "mongodbatlas_cluster" "this" {

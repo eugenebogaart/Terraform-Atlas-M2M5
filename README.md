@@ -1,7 +1,8 @@
 # Setup MonogoDB Atlast cluster M2 and/or M5
 
-Provisioning a shared cluster of size M2 and/or M5 with Terraform
+Provisioning a shared cluster of size M2 and/or M5 with Terraform.
 This process is slightly different then M10 and up.
+See below sample 
 
 ```
 resource "mongodbatlas_cluster" "this" {
@@ -19,4 +20,5 @@ resource "mongodbatlas_cluster" "this" {
     provider_instance_size_name = "M5"
 
     ...
+}
 ```
